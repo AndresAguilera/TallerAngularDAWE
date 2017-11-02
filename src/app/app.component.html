@@ -1,0 +1,22 @@
+<div>
+  <mat-toolbar color="primary">
+    <span><mat-icon>domain</mat-icon></span>
+
+    <span>Taler en Clases SPA- {{title}}</span>
+
+
+    <button mat-raised-button color="warn" [routerLink]="['/']"> Inicio </button>
+    <button mat-raised-button [routerLink]="['/listado']"> Listado de objetos </button>
+    <button mat-raised-button color="primary" [routerLink]="['/agregar-objeto']">Ingresar objeto </button>
+    <!--<button mat-raised-button color="accent" >Editar </button>-->
+
+
+  </mat-toolbar>
+
+  <mat-card>
+    <h1> Cuerpo</h1>
+    <router-outlet></router-outlet>
+    <!--<app-home></app-home>-->
+  </mat-card>
+
+</div>
